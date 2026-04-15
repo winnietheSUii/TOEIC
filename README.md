@@ -1,163 +1,188 @@
 # 📘 TOEIC Study Plan — 40 Days
-> **Daily Commitment:** 3 Hours/Day · **Tools:** Memmoread · NotebookLM · iPad Error Log
-> **Level:** B1 → B2 · **Exam Coverage:** Part 5 (Grammar) · Part 6 (Context) · Part 7 (Reading) · Parts 1–4 (Listening)
+> **Daily Commitment:** 3 Hours · **Tools:** Memmoread · NotebookLM · iPad Error Log
+> **Level:** B1 → B2 · **Parts:** 1–4 (Listening) · 5–7 (Reading & Grammar)
 
 ---
 
-## 📊 Progress Overview
+## 📊 Progress Dashboard
 
 | Phase | Days | Focus | Status |
 |-------|------|-------|--------|
 | 🧱 Phase 1 | Day 1–10 | Grammar Foundations + Problem Drilling | 🔄 In Progress |
-| 🏋️ Phase 2 | Day 11–25 | Listening Intensive + Part 7 Stamina | — |
-| 🚀 Phase 3 | Day 26–40 | ETS Full Simulation + Error Mastery | — |
+| 🏋️ Phase 2 | Day 11–25 | Listening Intensive + Part 7 Stamina | ⬜ Pending |
+| 🚀 Phase 3 | Day 26–40 | ETS Full Simulation + Error Mastery | ⬜ Pending |
 
 ---
 
 ## 🗺️ Grammar Module Roadmap
 
 ```
-[✅ DONE] Module 1 ──► [NOW] Module 2 ──► Module 3 ──► Module 4 ──► Module 5 ──► Review
-  (Parts of Speech)    (Sentence Core)   (Connectors) (Non-Finite) (Clauses)   Days 37–40
+✅ Module 1 ──► 🔄 Module 2 ──► Module 3 ──► Module 4 ──► Module 5
+(Parts of Speech)  (Sentence Core)  (Connectors)  (Non-Finite)  (Clauses)
+   COMPLETE          NOW              Week 3         Week 4        Week 5
 ```
 
-| Module | Priority | Topics | Status |
-|--------|----------|--------|--------|
-| 🔴 Module 1 | HIGH | Nouns · Pronouns · Adjectives · Adverbs · Word Forms | ✅ **Complete** |
-| 🔴 Module 2 | HIGH | Verb Forms · S-V Agreement · Tenses · Active/Passive | 🔄 In Progress |
-| 🟡 Module 3 | MEDIUM-HIGH | Prepositions · Conjunctions | — |
-| 🟡 Module 4 | MEDIUM | Participles · Gerunds · Infinitives · Modifiers | — |
-| 🔵 Module 5 | MEDIUM-LOW | Relative Clauses · Adverb Clauses · Comparison | — |
-| ⚪ Module 6 | — | ~~Subjunctives · Inversion · Parallelism~~ | ✂️ **Cut** |
+| Module | Priority | Status |
+|--------|----------|--------|
+| 🔴 Module 1 — High-Yield Fundamentals | HIGH | ✅ **Complete** |
+| 🔴 Module 2 — Core Sentence Mechanics | HIGH | 🔄 In Progress |
+| 🟡 Module 3 — Syntactical Connectors | MEDIUM-HIGH | ⬜ Pending |
+| 🟡 Module 4 — Non-Finite Verbs & Modifiers | MEDIUM | ⬜ Pending |
+| 🔵 Module 5 — Complex Clauses | MEDIUM-LOW | ⬜ Pending |
+| ⚪ Module 6 — Edge Cases | — | ✂️ **Skipped** |
 
 ---
 
 ## ✅ Module 1 — High-Yield Fundamentals *(Complete)*
-> All topics done. These are your "10-second kill" questions — solvable without reading the full sentence.
+> "10-second kill" questions — solvable by identifying word class without reading the full sentence.
 
-| # | Topic | Notes | Status |
-|---|-------|-------|--------|
-| 1.1 | Nouns | Position · Count/Non-count · Compound · Determiners · Common TOEIC nouns | ✅ Done |
-| 1.2 | Pronouns | Subject · Object · Reflexive · Possessive pronouns | ✅ Done |
-| 1.3 | Adjectives | Suffixes · Participial (`-ed` vs `-ing`) · Position | ✅ Done |
-| 1.4 | Adverbs | Position · Confusing pairs · Frequency · Connecting · Emphasizing · Other | ✅ Done |
-| 1.5 | Word Forms | N ↔ V ↔ Adj ↔ Adv — suffix system · 30 word families · Mixed practice | ✅ Done |
+<details>
+<summary><b>1.1 · Nouns ✅</b> — 6 subtopics</summary>
+
+| # | Subtopic | Key Focus |
+|---|----------|-----------|
+| 1.1.1 | Position of Nouns | Subject · Object · Complement positions |
+| 1.1.2 | Count vs. Non-Count Nouns | Article rules · Confusing pairs (advertising vs. advertisement) |
+| 1.1.3 | Determiners and Nouns | Articles (a/an/the) · Quantifier matching table |
+| 1.1.4 | Concrete vs. Abstract Nouns | Person noun (-or/-ist) vs. concept noun (-tion/-ment) |
+| 1.1.5 | Compound Nouns | Noun + Noun structure · Pluralization rule · TOEIC vocab list |
+| 1.1.6 | Common Nouns in TOEIC | Similar-looking nouns with different meanings (permit vs. permission) |
+
+</details>
+
+<details>
+<summary><b>1.2 · Pronouns ✅</b> — 6 subtopics</summary>
+
+| # | Subtopic | Key Focus |
+|---|----------|-----------|
+| 1.2.1 | Personal · Possessive Pronouns · Possessive Adjectives | Subject/Object/Possessive forms · Pronoun before noun vs. standalone |
+| 1.2.2 | Reflexive Pronouns | Same subject/object rule · Emphasis use · `by oneself` expressions |
+| 1.2.3 | Demonstrative Pronouns & Adjectives | `that/those` in comparisons · `those` = "people who" |
+| 1.2.4 | Indefinite Pronouns (1) — One, Another, Other | Specific vs. unspecified · `another` = singular · `others` = standalone |
+| 1.2.5 | Indefinite Pronouns (2) — Some, Any, No, None, Most | Sentence type matching · `no` vs. `none` · `most` vs. `almost` |
+| 1.2.6 | Pronoun / Possessive Adjective Agreement | Number · Gender · Person · Organization = `its` (not `their`) |
+
+</details>
+
+<details>
+<summary><b>1.3 · Adjectives ✅</b> — 4 subtopics</summary>
+
+| # | Subtopic | Key Focus |
+|---|----------|-----------|
+| 1.3.1 | Positions of Adjectives | Pre-nominal · Predicative · Only adj can modify noun |
+| 1.3.2 | Quantifiers as Adjectives & Indefinite Pronouns | Count/non-count quantifier table · `of the` pronoun structure |
+| 1.3.3 | Confusing Adjectives | Same-root pairs: `satisfactory` vs `satisfying` · `economic` vs `economical` |
+| 1.3.4 | Expressions with Be + Adjective | Fixed collocations: `be subject to` · `be eligible for` · `be aware of` |
+
+</details>
+
+<details>
+<summary><b>1.4 · Adverbs ✅</b> — 8 subtopics</summary>
+
+| # | Subtopic | Key Focus |
+|---|----------|-----------|
+| 1.4.1 | Functions & Positions of Adverbs | 3 positions · Adjective ≠ adverb trap |
+| 1.4.2 | Confusing Adverbs | hard/hardly · late/lately · near/nearly · high/highly |
+| 1.4.3 | Adverbs of Time | already/still/yet · ever since · ago · once |
+| 1.4.4 | Adverbs of Frequency | Frequency scale · Double negative trap (hardly ever) |
+| 1.4.5 | Connecting Adverbs | however/therefore/furthermore · Semicolon rule · No redundancy |
+| 1.4.6 | Emphasizing Adverbs (1) | just/right/well/even/quite · Comparison emphasisers |
+| 1.4.7 | Emphasizing Adverbs (2) | so vs. such · very vs. too · much too |
+| 1.4.8 | Other Adverbs | also/too/as well/either · later/thereafter/since · ahead/forward |
+
+</details>
+
+<details>
+<summary><b>1.5 · Word Forms ✅</b> — 5 subtopics</summary>
+
+| # | Subtopic | Key Focus |
+|---|----------|-----------|
+| 1.5.1 | Word Family & Suffix System | All 4 suffix groups · Signal word detection · 4-step strategy |
+| 1.5.2 | Noun ↔ Verb Forms | 35 core pairs · Nominalization · Verb after modal |
+| 1.5.3 | Adjective Forms | Suffix groups · `-ed` vs `-ing` (cause vs. receive) |
+| 1.5.4 | Adverb Forms | `-ly` patterns · Flat adverbs · Tricky `-ly` adjectives |
+| 1.5.5 | Word Families Master Reference | 30 essential families · Mixed practice · Speed strategy |
+
+</details>
 
 ---
 
-## 🔴 Module 2 — Core Sentence Mechanics
-> Highest ROI module after Module 1. Core of Part 5 & 6 grammar questions.
+## 🔴 Module 2 — Core Sentence Mechanics *(In Progress)*
+> Highest ROI after Module 1. The structural core of English sentences.
 
-| # | Topic | Notes | Status |
-|---|-------|-------|--------|
-| 2.1 | Subjects & Verbs | Identifying sentence core | — |
-| 2.2 | Objects & Complements | Transitive vs. intransitive | — |
+| # | Subtopic | Key Focus | Status |
+|---|----------|-----------|--------|
+| 2.1 | Subjects & Verbs | Identifying the sentence core | — |
+| 2.2 | Objects & Complements | Transitive vs. intransitive verbs | — |
 | 2.3 | Forms & Types of Verbs | Regular · Irregular · Linking · Auxiliary | — |
-| 2.4 | Subject-Verb Agreement | Tricky subjects: each / none / either…or / collective nouns | — |
-| 2.5 | Tenses | **Focus:** Present Simple · Past Simple · Present Perfect **only** | — |
+| 2.4 | Subject-Verb Agreement | Tricky subjects: `each` / `none` / `either…or` / collective nouns | — |
+| 2.5 | Tenses | **3 only:** Present Simple · Past Simple · Present Perfect | — |
 | 2.6 | Active & Passive Voice | Most heavily tested structure in Part 5 | — |
 
 ---
 
 ## 🟡 Module 3 — Syntactical Connectors
-> Always read both clauses before selecting. These are logic questions, not just grammar.
+> Always read both clauses before choosing. These test logic as much as grammar.
 
-| # | Topic | Notes | Status |
-|---|-------|-------|--------|
+| # | Subtopic | Key Focus | Status |
+|---|----------|-----------|--------|
 | 3.1 | Prepositions | Time · Place · Direction · Fixed collocations | — |
-| 3.2 | Coordinating Conjunctions | FANBOYS: for · and · nor · but · or · yet · so | — |
+| 3.2 | Coordinating Conjunctions | FANBOYS: for / and / nor / but / or / yet / so | — |
 | 3.3 | Correlative Conjunctions | both…and · either…or · neither…nor · not only…but also | — |
 
-> 🗒️ Transition words (however, therefore, furthermore…) → Already done in Module 1 Adverbs. No re-study.
+> 🗒️ Transition words already covered in **Module 1.4 — Connecting Adverbs**. No re-study needed.
 
 ---
 
 ## 🟡 Module 4 — Non-Finite Verbs & Modifiers
+> Pattern recognition over rule memorization.
 
-| # | Topic | Notes | Status |
-|---|-------|-------|--------|
-| 4.1 | Participles | V-ing / V-ed as adjectives — cause vs. receive trap (review from Word Forms) | — |
-| 4.2 | Gerunds | Verb + gerund vs. verb + infinitive — common pairs | — |
+| # | Subtopic | Key Focus | Status |
+|---|----------|-----------|--------|
+| 4.1 | Participles | V-ing / V-ed as modifiers · Cause vs. receive recap | — |
+| 4.2 | Gerunds | Verb + gerund vs. verb + infinitive · Common pairs | — |
 | 4.3 | To-infinitives | Purpose · Adjective complement · Noun role | — |
-| 4.4 | Modifiers | Misplaced modifier only — 1 session, Part 5 trap focus | — |
+| 4.4 | Modifiers | Misplaced modifier trap only — 1 session | — |
 
 ---
 
 ## 🔵 Module 5 — Complex Clauses *(Light Coverage)*
-> These appear more in Part 6 & 7 than Part 5. Don't over-invest here.
+> These appear more in Part 6 & 7 than Part 5. Don't over-invest.
 
-| # | Topic | Notes | Status |
-|---|-------|-------|--------|
-| 5.1 | Relative Clauses | who · which · that · whose — defining vs. non-defining | — |
-| 5.2 | Adverb Clauses | because · although · when · if — the 4 essential types | — |
+| # | Subtopic | Key Focus | Status |
+|---|----------|-----------|--------|
+| 5.1 | Relative Clauses | who / which / that / whose · Defining vs. non-defining | — |
+| 5.2 | Adverb Clauses | because / although / when / if — the 4 essential types | — |
 | 5.3 | Comparison | Comparative + superlative with much / even / far / by far | — |
-| 5.4 | Parallelism | Concept overview only — 1 session max | — |
+| 5.4 | Parallelism | Concept overview — 30 min max | — |
 
 ---
 
-## 🧱 Phase 1 — The Core Engine *(Day 1–10)*
-> **Focus:** Grammar theory + immediate problem drilling. Build the foundation before touching Listening.
+## 📅 40-Day Schedule
+
+### 🧱 Phase 1 · Days 1–10 · Grammar + Problem Drilling
 
 **Daily 3-Hour Block:**
-
-### 🕐 Hour 1 · Theory & Second Brain *(Memmoread + NotebookLM)*
-- Open `Learn Grammar` in Memmoread → complete 1–2 subtopics from your **current module**
-- In NotebookLM: write one entry per subtopic with 3 things only:
-  - The **rule** (1 sentence)
-  - The **formula** (structure pattern)
-  - One **example sentence**
-- Keep entries short — you will add to them from your error log later
-
-### 🕑 Hour 2 · Problem Diving *(Parts 5 & 6 Drill)*
-- **First 30 min → Part 5 Drill**
-  - Open `Reading Quiz → Part 5` in Memmoread
-  - Do **2–3 sets** targeting the exact grammar topic from Hour 1
-  - After each wrong answer: categorize the error immediately —
-    - Was it a **word form** trap? A **meaning** trap? A **position** trap?
-  - Do not move on until you understand *why* the correct answer is correct
-- **Next 30 min → Part 6 Drill**
-  - Move to `Part 6` (Text Completion)
-  - Focus on spotting the same grammar patterns **inside full paragraphs and emails**
-  - Part 6 adds context — use it to confirm your understanding from Part 5
-
-### 🕒 Hour 3 · Error Log *(iPad)*
-- Open `Analytics` tab in Memmoread → screenshot every wrong question
-- On each screenshot, write **1 sentence** identifying the trap:
-  > *"Word form trap: after a preposition → need Gerund, not infinitive"*
-- Cross-check with your NotebookLM notes — if you missed a rule, update the note now
-- End with 10 min of Memmoread vocabulary: **Business/Office** word list only
-
-### 📅 Phase 1 Grammar Schedule
+- **Hour 1 — Theory** (Memmoread `Learn Grammar` + NotebookLM notes)
+- **Hour 2 — Problem Diving** (Part 5 drill → Part 6 drill, same topic as Hour 1)
+- **Hour 3 — Error Log** (iPad screenshots + 1-sentence fix per wrong answer)
 
 | Day | Grammar Topic | Module |
 |-----|---------------|--------|
 | Day 1–2 | Subjects & Verbs + Objects & Complements | 2.1 / 2.2 |
 | Day 3–4 | Forms & Types of Verbs | 2.3 |
 | Day 5–6 | Subject-Verb Agreement | 2.4 |
-| Day 7–8 | Tenses (3 only: Present Simple · Past Simple · Present Perfect) | 2.5 |
+| Day 7–8 | Tenses (3 only) | 2.5 |
 | Day 9–10 | Active & Passive Voice | 2.6 |
 
 ---
 
-## 🏋️ Phase 2 — The Heavy Lifting *(Day 11–25)*
-> **Focus:** Build listening reflexes and Part 7 stamina. Grammar drilling continues in parallel.
+### 🏋️ Phase 2 · Days 11–25 · Listening + Reading Stamina
 
-### 🕐 Hour 1 · Listening Intensive *(Parts 1–4)*
-- Warm up: Parts 1 & 2 — focus on **Who / What / When / Where**
-- Parts 3 & 4: Conversations and Short Talks
-- **Critical Rule:** Read the 3 questions **before** audio starts. If you miss one — guess instantly and move your eyes to the next set. Never chase a lost answer.
-
-### 🕑 Hour 2 · Reading Comprehension *(Part 7)*
-- Start: Single Passages → then Double/Triple Passages
-- **Critical Rule:** Don't read the whole text first. Read the questions → find keywords → scan for them. Full reading = wasted time.
-- Target: finish each single passage in under 4 minutes
-
-### 🕒 Hour 3 · Grammar + Vocabulary *(Part 5 & 6 + Flashcards)*
-- Do 1–2 sets of Part 6 (context-dependent grammar — tests tense consistency and connector logic)
-- Continue Part 5 drilling on the current grammar module
-- Update vocabulary flashcards with business terms from Parts 4 & 7
-
-### 📅 Phase 2 Grammar Schedule
+**Daily 3-Hour Block:**
+- **Hour 1 — Listening** (Parts 1–4 · Read questions before audio starts)
+- **Hour 2 — Part 7** (Questions first → keywords → scan · Single then double passages)
+- **Hour 3 — Grammar + Vocab** (Part 5/6 drill · Business flashcards from Parts 4 & 7)
 
 | Day | Grammar Topic | Module |
 |-----|---------------|--------|
@@ -166,48 +191,29 @@
 | Day 17–18 | Participles | 4.1 |
 | Day 19–20 | Gerunds | 4.2 |
 | Day 21–22 | To-infinitives | 4.3 |
-| Day 23 | Modifiers (misplaced modifier only) | 4.4 |
+| Day 23 | Modifiers | 4.4 |
 | Day 24–25 | Relative Clauses | 5.1 |
 
 ---
 
-## 🚀 Phase 3 — ETS Simulation & Stamina *(Day 26–40)*
-> **Focus:** Real exam conditions, time management, and closing weak spots.
+### 🚀 Phase 3 · Days 26–40 · ETS Simulation
 > **Materials:** ETS Official Books (เล่มเทาเทา · เขียวฟ้า · ส้มฟ้า)
 
-### 🎧 Listening Days *(Days 26, 28, 30, 32, 34, 36)*
-- 1 Full Listening Test (Parts 1–4) — **do not pause audio** *(45 min)*
-- Review every mistake: Was it vocabulary? Speed? Losing focus?
-- Write error category on iPad screenshot
-
-### 📖 Reading Days *(Days 27, 29, 31, 33, 35)*
-- 1 Full Reading Test (Parts 5–7) — **strict 75-minute timer**
-- **Target split:** Part 5 & 6 under 20 minutes → 55 minutes left for Part 7
-- Review iPad screenshots and identify the correct logic after each test
-
-### 📅 Phase 3 Grammar Schedule *(alongside simulation)*
+**Alternating Pattern:**
+- **Listening Days** (26, 28, 30, 32, 34, 36): 1 Full Listening Test — no pausing (45 min) + error review
+- **Reading Days** (27, 29, 31, 33, 35): 1 Full Reading Test — 75-min timer · Part 5+6 ≤ 20 min → 55 min for Part 7
+- **Sundays** (33, 40): No new tests · Swipe through iPad error screenshots · Self-quiz
 
 | Day | Grammar Topic | Module |
 |-----|---------------|--------|
-| Day 26–27 | Adverb Clauses (because / although / when / if) | 5.2 |
+| Day 26–27 | Adverb Clauses | 5.2 |
 | Day 28–29 | Comparison | 5.3 |
-| Day 30 | Parallelism (30 min only) | 5.4 |
-| Day 31–36 | No new grammar — simulation + error review only | Review |
-
-### 🗓️ Sunday Rule *(Days 33 & 40)*
-- No new tests
-- Open iPad → swipe through all accumulated error screenshots
-- Quiz yourself: do you remember the rule? The trap category?
-- This is the **compounding step** — where retention actually happens
-
-### 🏁 Final Days *(Day 37–40)*
-
-| Day | Task |
-|-----|------|
-| Day 37 | Module 1+2 — revisit your 3 weakest topics from error log |
-| Day 38 | Module 3+4 — revisit your 3 weakest topics from error log |
-| Day 39 | Full timed Part 5 drill (40 questions · 15 minutes max) |
-| Day 40 | Light review only. No new material. Rest. |
+| Day 30 | Parallelism | 5.4 |
+| Day 31–36 | No new grammar — simulation + error review only | — |
+| Day 37 | Module 1+2 — revisit 3 weakest topics from error log | Review |
+| Day 38 | Module 3+4 — revisit 3 weakest topics from error log | Review |
+| Day 39 | Full timed Part 5 drill (40 Qs · 15 min max) | Review |
+| Day 40 | Light review only — rest | — |
 
 ---
 
@@ -217,14 +223,26 @@
 TOEIC/
 ├── README.md
 └── Grammar/
-    ├── 01 Nouns/                          ✅ Complete (6 files)
+    ├── 01 Nouns/                          ✅ 6 files
     │   ├── 01_Position_of_Nouns.md
     │   ├── 02_Count_vs_NonCount_Nouns.md
     │   ├── 03_Determiners_and_Nouns.md
     │   ├── 04_Concrete_vs_Abstract_Nouns.md
     │   ├── 05_Compound_Nouns.md
     │   └── 06_Common_Nouns_in_TOEIC.md
-    ├── 04 Adverbs/                        ✅ Complete (8 files)
+    ├── 02 Pronouns/                       ✅ 6 files
+    │   ├── 01_Personal_Possessive_Pronouns.md
+    │   ├── 02_Reflexive_Pronouns.md
+    │   ├── 03_Demonstrative_Pronouns.md
+    │   ├── 04_Indefinite_Pronouns_One_Another_Other.md
+    │   ├── 05_Indefinite_Pronouns_Some_Any.md
+    │   └── 06_Pronoun_Agreement.md
+    ├── 03 Adjectives/                     ✅ 4 files
+    │   ├── 01_Positions_of_Adjectives.md
+    │   ├── 02_Quantifiers_as_Adjectives.md
+    │   ├── 03_Confusing_Adjectives.md
+    │   └── 04_Be_Adjective_Expressions.md
+    ├── 04 Adverbs/                        ✅ 8 files
     │   ├── 01_Functions_and_Positions_of_Adverbs.md
     │   ├── 02_Confusing_Adverbs.md
     │   ├── 03_Adverbs_of_Time.md
@@ -233,7 +251,7 @@ TOEIC/
     │   ├── 06_Emphasizing_Adverbs_1.md
     │   ├── 07_Emphasizing_Adverbs_2.md
     │   └── 08_Other_Adverbs.md
-    └── 05 Word Forms/                     ✅ Complete (5 files)
+    └── 05 Word Forms/                     ✅ 5 files
         ├── 01_Word_Family_and_Suffixes.md
         ├── 02_Noun_vs_Verb_Forms.md
         ├── 03_Adjective_Forms.md
@@ -241,45 +259,34 @@ TOEIC/
         └── 05_Word_Families_Master_Reference.md
 ```
 
+**Total notes:** 29 files · All in Notion-importable Markdown format
+
 ---
 
 ## 🧠 Exam Strategy — Quick Reference
 
-### Part 5 · Incomplete Sentences *(40 Qs · Target: ≤20 min)*
-1. Read the signal word before/after the blank
-2. Scan suffixes of all 4 options → classify N / V / Adj / Adv
-3. Eliminate wrong classes immediately
-4. If 2 options remain → decide by meaning
-5. **≤ 20 seconds per question** — if unsure after 20 sec, mark and move on
+| Part | Questions | Time Budget | Key Tactic |
+|------|-----------|-------------|------------|
+| **Part 5** | 40 Qs | ≤ 20 min | Signal word → suffix scan → eliminate → decide by meaning |
+| **Part 6** | 16 Qs | Within 20 min | Read full paragraph first · Tense + connector consistency |
+| **Part 7** | 54 Qs | 55 min | Questions → keywords → scan · Never read whole text first |
+| **Parts 1–4** | — | 45 min | Read next set's questions while audio plays · Never chase missed answers |
 
-### Part 6 · Text Completion *(16 Qs · Target: in the 20-min budget)*
-- Read the **whole paragraph** before answering — context is everything
-- Connecting adverbs and tense consistency are the main traps here
-
-### Part 7 · Reading Comprehension *(54 Qs · Target: 55 min)*
-- Questions first → keywords → scan
-- Single passages: ~4 min each · Double/Triple: ~6–8 min each
-- If running consistently short on time → your Part 5 speed needs work
+> 💡 **Score Bottleneck Check:** After each simulation, track your **time left** at end of Part 7.
+> Running out of time for Part 7 → your **Part 5 speed** is the problem, not your vocabulary.
 
 ---
 
-## 📌 What Was Cut & Why
+## ✂️ What Was Cut & Why
 
-| Cut Topic | Reason |
-|-----------|--------|
-| Subjunctives | < 2 questions per exam — not worth it at 40 days |
-| Inversion | Extremely rare; covered briefly in Adverbs of Frequency |
-| Noun Clauses *(standalone)* | Low Part 5 frequency; covered implicitly in Part 7 reading |
-| Transition Words *(Module 3)* | Fully covered in Adverbs — Connecting Adverbs notes |
-| Parallelism | 30-minute concept overview only — no deep study |
-
----
-
-> 💡 **Score Tip:** Track your **time remaining** for Reading in Notion after every simulation.
-> If you finish Part 7 with less than 5 minutes left → your Part 5 speed is the bottleneck, not your vocabulary.
-> Target: Part 5 done at the **20-minute mark**, every time.
+| Topic | Reason |
+|-------|--------|
+| Subjunctives | < 2 questions per exam — not worth it |
+| Inversion | Extremely rare · Basic concept in Adverbs of Frequency |
+| Noun Clauses *(standalone)* | Low Part 5 frequency · Implicit in Part 7 reading |
+| Transition Words *(Module 3)* | Fully covered in Adverbs — Connecting Adverbs |
+| Parallelism | 30-minute concept only — no deep study |
 
 ---
 
-*Grammar notes written in Notion-style Markdown.
-Import any `.md` file into Notion via **Import → Markdown & CSV**.*
+*Import any `.md` file into Notion: **+ New Page → Import → Markdown & CSV***
