@@ -112,12 +112,50 @@
 
 | # | Subtopic | Key Focus | Status |
 |---|----------|-----------|--------|
-| 2.1 | Subjects & Verbs | Identifying the sentence core | — |
-| 2.2 | Objects & Complements | Transitive vs. intransitive verbs | — |
-| 2.3 | Forms & Types of Verbs | Regular · Irregular · Linking · Auxiliary | — |
+| 2.1 | Subjects & Verbs | See breakdown below | ✅ Done |
+| 2.2 | Objects & Complements | See breakdown below | ✅ Done |
+| 2.3 | Forms & Types of Verbs | See breakdown below | ✅ Done |
 | 2.4 | Subject-Verb Agreement | Tricky subjects: `each` / `none` / `either…or` / collective nouns | — |
 | 2.5 | Tenses | **3 only:** Present Simple · Past Simple · Present Perfect | — |
 | 2.6 | Active & Passive Voice | Most heavily tested structure in Part 5 | — |
+
+<details>
+<summary><b>2.1 · Subjects & Verbs ✅</b> — 6 subtopics</summary>
+
+| # | Subtopic | Key Focus |
+|---|----------|-----------|
+| 2.1.1 | Subjects | Valid subject forms · No verb/adj in subject slot · Nouns that look like adj/verb |
+| 2.1.2 | Dummy Subject `It` | `It is adj + to/that` · Only `it` works — not `that` or `there` |
+| 2.1.3 | Dummy Subject `There` | `There + linking verb + noun` · Existence · `It` vs `There` decision rule |
+| 2.1.4 | Verbs | Only conjugated verbs · Verbals cannot be main verbs · No noun/adj in verb slot |
+| 2.1.5 | Number, Tense & Voice | Subject-verb number · Time expression = tense signal · Active vs. passive |
+| 2.1.6 | Verbs in the Imperative | Bare infinitive after `When/If/Whatever` · `Please` + bare infinitive |
+
+</details>
+
+<details>
+<summary><b>2.2 · Objects & Complements ✅</b> — 4 subtopics</summary>
+
+| # | Subtopic | Key Focus |
+|---|----------|-----------|
+| 2.2.1 | Objects | Valid object forms · No verb/adj in object slot · Noun conversion required |
+| 2.2.2 | Dummy Object `It` | `Verb + it + adj + to/that` · `make it possible to` → to-infinitive |
+| 2.2.3 | Complements | Subject complement vs. object complement · No verb/adverb in complement slot |
+| 2.2.4 | Noun vs. Adjective Complements | Identify (noun) vs. describe (adj) · Signal: `a/an` → noun, `quite/very` → adj |
+
+</details>
+
+<details>
+<summary><b>2.3 · Forms & Types of English Verbs ✅</b> — 4 subtopics</summary>
+
+| # | Subtopic | Key Focus |
+|---|----------|-----------|
+| 2.3.1 | Modal & Auxiliary Verbs + Bare Infinitive | `will/can/must/should/did` → bare form · No `to`, no `-s`, no past |
+| 2.3.2 | Transitive vs. Intransitive Verbs | Direct object vs. preposition + object · `discuss` ≠ `discuss about` |
+| 2.3.3 | Ditransitive Verbs | Two-object verbs: `tell/inform/advise` vs. `explain/suggest to` |
+| 2.3.4 | Verbs in That-Clauses | Mandative subjunctive: `suggest/require/essential that` → bare infinitive |
+
+</details>
 
 ---
 
@@ -251,15 +289,32 @@ TOEIC/
     │   ├── 06_Emphasizing_Adverbs_1.md
     │   ├── 07_Emphasizing_Adverbs_2.md
     │   └── 08_Other_Adverbs.md
-    └── 05 Word Forms/                     ✅ 5 files
-        ├── 01_Word_Family_and_Suffixes.md
-        ├── 02_Noun_vs_Verb_Forms.md
-        ├── 03_Adjective_Forms.md
-        ├── 04_Adverb_Forms.md
-        └── 05_Word_Families_Master_Reference.md
+    ├── 05 Word Forms/                     ✅ 5 files
+    │   ├── 01_Word_Family_and_Suffixes.md
+    │   ├── 02_Noun_vs_Verb_Forms.md
+    │   ├── 03_Adjective_Forms.md
+    │   ├── 04_Adverb_Forms.md
+    │   └── 05_Word_Families_Master_Reference.md
+    ├── 06 Objects, Complements/           ✅ 4 files
+    │   ├── 01_Objects.md
+    │   ├── 02_Dummy_Object_It.md
+    │   ├── 03_Complements.md
+    │   └── 04_Noun_vs_Adjective_Complements.md
+    ├── 06 Forms and Types of English Verbs/ ✅ 4 files
+    │   ├── 01_Modal_Auxiliary_Bare_Infinitive.md
+    │   ├── 02_Transitive_vs_Intransitive_Verbs.md
+    │   ├── 03_Verbs_in_That_Clauses.md
+    │   └── 04_Verb_Form_Practice.md
+    └── 07 Subject, Verbs/                 ✅ 6 files
+        ├── 01_Subjects.md
+        ├── 02_Dummy_Subject_It.md
+        ├── 03_Dummy_Subject_There.md
+        ├── 04_Verbs.md
+        ├── 05_Number_Tense_Voice.md
+        └── 06_Verbs_in_the_Imperative.md
 ```
 
-**Total notes:** 29 files · All in Notion-importable Markdown format
+**Total notes:** 43 files · All in Notion-importable Markdown format
 
 ---
 
