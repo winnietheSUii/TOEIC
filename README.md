@@ -115,7 +115,7 @@
 | 2.1 | Subjects & Verbs | See breakdown below | ✅ Done |
 | 2.2 | Objects & Complements | See breakdown below | ✅ Done |
 | 2.3 | Forms & Types of Verbs | See breakdown below | ✅ Done |
-| 2.4 | Subject-Verb Agreement | Tricky subjects: `each` / `none` / `either…or` / collective nouns | — |
+| 2.4 | Subject-Verb Agreement | See breakdown below | ✅ Done |
 | 2.5 | Tenses | **3 only:** Present Simple · Past Simple · Present Perfect | — |
 | 2.6 | Active & Passive Voice | Most heavily tested structure in Part 5 | — |
 
@@ -154,6 +154,18 @@
 | 2.3.2 | Transitive vs. Intransitive Verbs | Direct object vs. preposition + object · `discuss` ≠ `discuss about` |
 | 2.3.3 | Ditransitive Verbs | Two-object verbs: `tell/inform/advise` vs. `explain/suggest to` |
 | 2.3.4 | Verbs in That-Clauses | Mandative subjunctive: `suggest/require/essential that` → bare infinitive |
+
+</details>
+
+<details>
+<summary><b>2.4 · Subject-Verb Agreement ✅</b> — 4 subtopics</summary>
+
+| # | Subtopic | Key Focus |
+|---|----------|-----------|
+| 2.4.1 | SVA in Number | `every/each` → singular · `many/a variety of` → plural · `of the` partitive rule |
+| 2.4.2 | Conjunctions & Modifiers | `and` → plural · `or` → nearest · correlative → match B · `along with` → ignore |
+| 2.4.3 | SVA in Relative Clauses | Antecedent controls verb · Distractor trap · `the number of` (singular) vs `a number of` (plural) |
+| 2.4.4 | Mixed Practice & Special Cases | Gerund subject → singular · Collective nouns → singular · Error identification drill |
 
 </details>
 
@@ -305,16 +317,21 @@ TOEIC/
     │   ├── 02_Transitive_vs_Intransitive_Verbs.md
     │   ├── 03_Verbs_in_That_Clauses.md
     │   └── 04_Verb_Form_Practice.md
-    └── 07 Subject, Verbs/                 ✅ 6 files
-        ├── 01_Subjects.md
-        ├── 02_Dummy_Subject_It.md
-        ├── 03_Dummy_Subject_There.md
-        ├── 04_Verbs.md
-        ├── 05_Number_Tense_Voice.md
-        └── 06_Verbs_in_the_Imperative.md
+    ├── 07 Subject, Verbs/                 ✅ 6 files
+    │   ├── 01_Subjects.md
+    │   ├── 02_Dummy_Subject_It.md
+    │   ├── 03_Dummy_Subject_There.md
+    │   ├── 04_Verbs.md
+    │   ├── 05_Number_Tense_Voice.md
+    │   └── 06_Verbs_in_the_Imperative.md
+    └── 09 Subject-Verb Agreement/         ✅ 4 files
+        ├── 01_Subject-Verb_Agreement_in_Number.md
+        ├── 02_Expressions_of_Quantity_+_Verb.md
+        ├── 03_Coordinating_and_Correlative_Conjunctions_+_Verb.md
+        └── 04_Subject-Verb_Agreement_with_Relative_Clauses.md
 ```
 
-**Total notes:** 43 files · All in Notion-importable Markdown format
+**Total notes:** 47 files · All in Notion-importable Markdown format
 
 ---
 
