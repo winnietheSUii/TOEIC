@@ -116,8 +116,8 @@
 | 2.2 | Objects & Complements | See breakdown below | ✅ Done |
 | 2.3 | Forms & Types of Verbs | See breakdown below | ✅ Done |
 | 2.4 | Subject-Verb Agreement | See breakdown below | ✅ Done |
-| 2.5 | Tenses | **3 only:** Present Simple · Past Simple · Present Perfect | — |
-| 2.6 | Active & Passive Voice | Most heavily tested structure in Part 5 | — |
+| 2.5 | Tenses | See breakdown below | ✅ Done |
+| 2.6 | Active & Passive Voice | See breakdown below | ✅ Done |
 
 <details>
 <summary><b>2.1 · Subjects & Verbs ✅</b> — 6 subtopics</summary>
@@ -166,6 +166,30 @@
 | 2.4.2 | Conjunctions & Modifiers | `and` → plural · `or` → nearest · correlative → match B · `along with` → ignore |
 | 2.4.3 | SVA in Relative Clauses | Antecedent controls verb · Distractor trap · `the number of` (singular) vs `a number of` (plural) |
 | 2.4.4 | Mixed Practice & Special Cases | Gerund subject → singular · Collective nouns → singular · Error identification drill |
+
+</details>
+
+<details>
+<summary><b>2.5 · Tenses ✅</b> — 4 subtopics</summary>
+
+| # | Subtopic | Key Focus |
+|---|----------|-----------|
+| 2.5.1 | Present/Past/Future Simple | Progressive tenses · Stative verbs cannot use `-ing` · Signal word matching |
+| 2.5.2 | Progressive Tenses | Present/Past/Future Perfect · `since/for` → present perfect · `had` for earlier past event |
+| 2.5.3 | Perfect Tenses | Tense-signal matching table · Sequence of tenses · `as soon as` + present simple |
+| 2.5.4 | Agreement in Tense | Mixed drill · Signal word ↔ tense matching · Master reference table |
+
+</details>
+
+<details>
+<summary><b>2.6 · Active & Passive Voice ✅</b> — 4 subtopics</summary>
+
+| # | Subtopic | Key Focus |
+|---|----------|-----------|
+| 2.6.1 | Identifying Active/Passive | Object present → active · Object absent → passive · Works in main clause, to-inf, relative clause |
+| 2.6.2 | Passive in Sentence Structures | Ditransitive (2-object) passive · Object complement stays after passive verb |
+| 2.6.3 | Perception Verbs | Subject causes feeling → active · Subject receives feeling → passive · `-ed` vs `-ing` |
+| 2.6.4 | Passive Form Expressions | `be + p.p. + preposition` collocations · `be + p.p. + to-infinitive` fixed structures |
 
 </details>
 
@@ -329,9 +353,19 @@ TOEIC/
         ├── 02_Expressions_of_Quantity_+_Verb.md
         ├── 03_Coordinating_and_Correlative_Conjunctions_+_Verb.md
         └── 04_Subject-Verb_Agreement_with_Relative_Clauses.md
+    ├── 10 Tenses/                         ✅ 4 files
+    │   ├── 01_Present_Past_Future_Simple.md
+    │   ├── 02_Progressive_Tenses.md
+    │   ├── 03_Perfect_Tenses.md
+    │   └── 04_Agreement_in_Tense.md
+    └── 11 Active Voice, Passive Voice/     ✅ 4 files
+        ├── 01_Identifying_Active_Passive_Sentences.md
+        ├── 02_Passive_Voice_of_Verbs_in_Sentence_Structures.md
+        ├── 03_Active_and_Passive_Voices_of_Perception_Verbs.md
+        └── 04_Expressions_of_the_Passive_Form.md
 ```
 
-**Total notes:** 47 files · All in Notion-importable Markdown format
+**Total notes:** 55 files · All in Notion-importable Markdown format
 
 ---
 
