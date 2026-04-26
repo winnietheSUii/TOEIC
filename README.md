@@ -4,6 +4,77 @@
 
 ---
 
+## 📂 Repository Structure
+
+```
+TOEIC/
+├── README.md                     ← You are here
+├── Dashboard/
+│   ├── index.html                ← 📊 Score Monitor (open in browser, drop CSVs)
+│   ├── LC/                       ← 🎧 Listening CSVs (Part 1–4)
+│   │   └── *.csv
+│   └── RC/                       ← 📖 Reading CSVs (Part 5–7)
+│       └── *.csv
+└── Grammar/                      ← 📝 Study Notes (Markdown)
+    ├── PART5_6_MASTER_TRICKS.md
+    ├── 01 Nouns/
+    ├── 02 Pronouns/
+    ├── 03 Adjectives/
+    ├── 04 Adverbs/
+    ├── 05 Word Forms/
+    ├── 06 Objects, Complements/
+    ├── 07 Subject, Verbs/
+    ├── 08 Forms and Types of English Verbs/
+    ├── 09 Subject-Verb Agreement/
+    ├── 10 Tenses/
+    ├── 11 Active Voice, Passive Voice/
+    └── 12 Prepositions/
+```
+
+### CSV Format (Memmoread Export)
+
+```csv
+Exam Title,ETS ชมพู ขาว Listening Test 2
+Timestamp(ms),1777180453926
+DateTime,2026-04-26 12:14
+
+Question,Selected,Correct
+Question 1,A,✓
+Question 2,B,✗
+...
+```
+
+**Naming:** Place Listening CSVs in `LC/` and Reading CSVs in `RC/`.
+
+### Question → Part Mapping
+
+| Section | Part | CSV Questions | Exam Questions |
+|---------|------|---------------|----------------|
+| LC | Part 1 — Photos | Q1–6 | Q1–6 |
+| LC | Part 2 — Q&A | Q7–31 | Q7–31 |
+| LC | Part 3 — Conversations | Q32–70 | Q32–70 |
+| LC | Part 4 — Talks | Q71–100 | Q71–100 |
+| RC | Part 5 — Incomplete Sentences | Q1–30 | Q101–130 |
+| RC | Part 6 — Text Completion | Q31–46 | Q131–146 |
+| RC | Part 7 — Single Passage | Q47–75 | Q147–175 |
+| RC | Part 7 — Double Passage | Q76–85 | Q176–185 |
+| RC | Part 7 — Triple Passage | Q86–100 | Q186–200 |
+
+---
+
+## 📊 Dashboard
+
+Open `Dashboard/index.html` in any browser → drag & drop your CSV files → done.
+
+- Per-part accuracy bars (P1–P7 with Single/Double/Triple breakdown)
+- Bar chart comparison across all parts
+- Auto-detected weakest part with focus recommendation
+- Test list with scores
+
+> No server needed. Pure client-side — runs via File API.
+
+---
+
 ## 📊 Progress Dashboard
 
 | Phase | Days | Focus | Status |
@@ -17,16 +88,16 @@
 ## 🗺️ Grammar Module Roadmap
 
 ```
-✅ Module 1 ──► 🔄 Module 2 ──► Module 3 ──► Module 4 ──► Module 5
+✅ Module 1 ──► ✅ Module 2 ──► Module 3 ──► Module 4 ──► Module 5
 (Parts of Speech)  (Sentence Core)  (Connectors)  (Non-Finite)  (Clauses)
-   COMPLETE          NOW              Week 3         Week 4        Week 5
+   COMPLETE          COMPLETE         Week 3         Week 4        Week 5
 ```
 
 | Module | Priority | Status |
 |--------|----------|--------|
 | 🔴 Module 1 — High-Yield Fundamentals | HIGH | ✅ **Complete** |
-| 🔴 Module 2 — Core Sentence Mechanics | HIGH | 🔄 In Progress |
-| 🟡 Module 3 — Syntactical Connectors | MEDIUM-HIGH | ⬜ Pending |
+| 🔴 Module 2 — Core Sentence Mechanics | HIGH | ✅ **Complete** |
+| 🟡 Module 3 — Syntactical Connectors | MEDIUM-HIGH | 🔄 In Progress |
 | 🟡 Module 4 — Non-Finite Verbs & Modifiers | MEDIUM | ⬜ Pending |
 | 🔵 Module 5 — Complex Clauses | MEDIUM-LOW | ⬜ Pending |
 | ⚪ Module 6 — Edge Cases | — | ✂️ **Skipped** |
@@ -107,7 +178,7 @@
 
 ---
 
-## 🔴 Module 2 — Core Sentence Mechanics *(In Progress)*
+## ✅ Module 2 — Core Sentence Mechanics *(Complete)*
 > Highest ROI after Module 1. The structural core of English sentences.
 
 | # | Subtopic | Key Focus | Status |
@@ -200,7 +271,7 @@
 
 | # | Subtopic | Key Focus | Status |
 |---|----------|-----------|--------|
-| 3.1 | Prepositions | Time · Place · Direction · Fixed collocations | — |
+| 3.1 | Prepositions | Time · Place · Direction · Fixed collocations | 🔄 In Progress |
 | 3.2 | Coordinating Conjunctions | FANBOYS: for / and / nor / but / or / yet / so | — |
 | 3.3 | Correlative Conjunctions | both…and · either…or · neither…nor · not only…but also | — |
 
@@ -291,84 +362,6 @@
 
 ---
 
-## 🗂️ Notes File Structure
-
-```
-TOEIC/
-├── README.md
-└── Grammar/
-    ├── 01 Nouns/                          ✅ 6 files
-    │   ├── 01_Position_of_Nouns.md
-    │   ├── 02_Count_vs_NonCount_Nouns.md
-    │   ├── 03_Determiners_and_Nouns.md
-    │   ├── 04_Concrete_vs_Abstract_Nouns.md
-    │   ├── 05_Compound_Nouns.md
-    │   └── 06_Common_Nouns_in_TOEIC.md
-    ├── 02 Pronouns/                       ✅ 6 files
-    │   ├── 01_Personal_Possessive_Pronouns.md
-    │   ├── 02_Reflexive_Pronouns.md
-    │   ├── 03_Demonstrative_Pronouns.md
-    │   ├── 04_Indefinite_Pronouns_One_Another_Other.md
-    │   ├── 05_Indefinite_Pronouns_Some_Any.md
-    │   └── 06_Pronoun_Agreement.md
-    ├── 03 Adjectives/                     ✅ 4 files
-    │   ├── 01_Positions_of_Adjectives.md
-    │   ├── 02_Quantifiers_as_Adjectives.md
-    │   ├── 03_Confusing_Adjectives.md
-    │   └── 04_Be_Adjective_Expressions.md
-    ├── 04 Adverbs/                        ✅ 8 files
-    │   ├── 01_Functions_and_Positions_of_Adverbs.md
-    │   ├── 02_Confusing_Adverbs.md
-    │   ├── 03_Adverbs_of_Time.md
-    │   ├── 04_Adverbs_of_Frequency.md
-    │   ├── 05_Connecting_Adverbs.md
-    │   ├── 06_Emphasizing_Adverbs_1.md
-    │   ├── 07_Emphasizing_Adverbs_2.md
-    │   └── 08_Other_Adverbs.md
-    ├── 05 Word Forms/                     ✅ 5 files
-    │   ├── 01_Word_Family_and_Suffixes.md
-    │   ├── 02_Noun_vs_Verb_Forms.md
-    │   ├── 03_Adjective_Forms.md
-    │   ├── 04_Adverb_Forms.md
-    │   └── 05_Word_Families_Master_Reference.md
-    ├── 06 Objects, Complements/           ✅ 4 files
-    │   ├── 01_Objects.md
-    │   ├── 02_Dummy_Object_It.md
-    │   ├── 03_Complements.md
-    │   └── 04_Noun_vs_Adjective_Complements.md
-    ├── 06 Forms and Types of English Verbs/ ✅ 4 files
-    │   ├── 01_Modal_Auxiliary_Bare_Infinitive.md
-    │   ├── 02_Transitive_vs_Intransitive_Verbs.md
-    │   ├── 03_Verbs_in_That_Clauses.md
-    │   └── 04_Verb_Form_Practice.md
-    ├── 07 Subject, Verbs/                 ✅ 6 files
-    │   ├── 01_Subjects.md
-    │   ├── 02_Dummy_Subject_It.md
-    │   ├── 03_Dummy_Subject_There.md
-    │   ├── 04_Verbs.md
-    │   ├── 05_Number_Tense_Voice.md
-    │   └── 06_Verbs_in_the_Imperative.md
-    └── 09 Subject-Verb Agreement/         ✅ 4 files
-        ├── 01_Subject-Verb_Agreement_in_Number.md
-        ├── 02_Expressions_of_Quantity_+_Verb.md
-        ├── 03_Coordinating_and_Correlative_Conjunctions_+_Verb.md
-        └── 04_Subject-Verb_Agreement_with_Relative_Clauses.md
-    ├── 10 Tenses/                         ✅ 4 files
-    │   ├── 01_Present_Past_Future_Simple.md
-    │   ├── 02_Progressive_Tenses.md
-    │   ├── 03_Perfect_Tenses.md
-    │   └── 04_Agreement_in_Tense.md
-    └── 11 Active Voice, Passive Voice/     ✅ 4 files
-        ├── 01_Identifying_Active_Passive_Sentences.md
-        ├── 02_Passive_Voice_of_Verbs_in_Sentence_Structures.md
-        ├── 03_Active_and_Passive_Voices_of_Perception_Verbs.md
-        └── 04_Expressions_of_the_Passive_Form.md
-```
-
-**Total notes:** 55 files · All in Notion-importable Markdown format
-
----
-
 ## 🧠 Exam Strategy — Quick Reference
 
 | Part | Questions | Time Budget | Key Tactic |
@@ -394,5 +387,7 @@ TOEIC/
 | Parallelism | 30-minute concept only — no deep study |
 
 ---
+
+**Total grammar notes:** 55 files · All in Notion-importable Markdown format
 
 *Import any `.md` file into Notion: **+ New Page → Import → Markdown & CSV***

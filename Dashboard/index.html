@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOEIC Score Monitor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Inter',sans-serif;background:#fafafa;color:#1a1a1a;padding:32px 20px}
+    .w{max-width:760px;margin:0 auto}
+    h1{font-size:20px;font-weight:700}
+    .sub{font-size:12px;color:#999;margin:4px 0 24px}
+    .row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+    .card{background:#fff;border:1px solid #eee;border-radius:10px;padding:16px;flex:1;min-width:140px}
+    .card .lb{font-size:10px;color:#999;text-transform:uppercase;letter-spacing:.8px;margin-bottom:4px}
+    .card .vl{font-size:28px;font-weight:700}
+    .card .gp{font-size:12px;font-weight:600;margin-top:2px}
+    .pos{color:#16a34a}.neg{color:#dc2626}
+    .sec{margin-bottom:24px}
+    .sec-t{font-size:10px;font-weight:600;color:#999;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+    table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #eee;border-radius:10px;overflow:hidden;font-size:13px}
+    th{font-size:10px;font-weight:600;color:#999;text-transform:uppercase;letter-spacing:.6px;text-align:left;padding:8px 12px;border-bottom:1px solid #f0f0f0}
+    td{padding:8px 12px;border-bottom:1px solid #f7f7f7}
+    tr:last-child td{border-bottom:none}
+    .m{font-family:'SF Mono','Consolas',monospace;font-size:12px}
+    .bar{background:#f0f0f0;border-radius:3px;height:5px;width:80px;display:inline-block;vertical-align:middle;margin-left:6px}
+    .bar i{display:block;height:5px;border-radius:3px}
+    .bg{background:#22c55e}.by{background:#f59e0b}.br{background:#ef4444}
+    .tag{font-size:9px;font-weight:600;padding:2px 6px;border-radius:3px;margin-right:4px}
+    .t-lc{background:#eff6ff;color:#3b82f6}.t-rc{background:#faf5ff;color:#a855f7}
+    select,input[type=number]{font-family:inherit;font-size:12px;border:1px solid #ddd;border-radius:6px;padding:4px 8px;background:#fff;outline:none}
+    select:focus,input:focus{border-color:#3b82f6}
+    input[type=number]{width:48px;text-align:center}
+    .ctrl{display:flex;align-items:center;gap:10px;margin-bottom:20px;flex-wrap:wrap}
+    .ctrl label{font-size:11px;color:#888}
+    .adj{display:inline-flex;align-items:center;gap:2px}
+    .adj button{width:22px;height:22px;border:1px solid #ddd;border-radius:4px;background:#fff;cursor:pointer;font-size:12px;color:#666;display:flex;align-items:center;justify-content:center}
+    .adj button:hover{background:#f0f0f0}
+    details{background:#fff;border:1px solid #eee;border-radius:10px;margin-bottom:6px;overflow:hidden}
+    summary{padding:12px 14px;cursor:pointer;font-size:13px;font-weight:500;display:flex;justify-content:space-between;align-items:center;list-style:none}
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:'▸';color:#ccc;font-size:11px}
+    details[open] summary::after{content:'▾'}
+    details table{border:none;border-radius:0}
+    .drop{border:2px dashed #ddd;border-radius:10px;padding:40px;text-align:center;cursor:pointer;transition:all .2s;margin-bottom:20px}
+    .drop:hover,.drop.ov{border-color:#3b82f6;background:#f8faff}
+    .drop p{font-size:13px;color:#999}.drop .h2{font-size:11px;color:#ccc;margin-top:4px}
+    .hidden{display:none}
+    .indent{padding-left:28px !important;background:#fafafa}
+    .p7head td{border-top:2px solid #eee}
+    .prof{font-size:11px;padding:3px 8px;border-radius:4px;font-weight:600;display:inline-block;margin-top:4px}
+    .prof-ip{background:#dcfce7;color:#166534}
+    .prof-wp{background:#dbeafe;color:#1e40af}
+    .prof-lw{background:#fef9c3;color:#854d0e}
+    .prof-ep{background:#ffedd5;color:#9a3412}
+    .prof-el{background:#fee2e2;color:#991b1b}
+    .prof-ba{background:#f3f4f6;color:#6b7280}
+    .st{font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;display:inline-block}
+    .st-pass{background:#dcfce7;color:#166534}
+    .st-fail{background:#fef2f2;color:#991b1b}
+  </style>
+</head>
+<body>
+<div class="w">
+  <h1>📊 TOEIC Score Monitor</h1>
+  <p class="sub">Upload CSVs — scores via official ETS conversion table</p>
+
+  <div id="drop" class="drop" onclick="document.getElementById('fp').click()">
+    <p>📁 Drop a folder or CSV files here</p>
+    <p class="h2">Each folder = 1 test set (LC + RC csv inside)</p>
+  </div>
+  <input type="file" id="fp" multiple accept=".csv" class="hidden" onchange="addFiles(this.files)">
+
+  <div id="dash" class="hidden">
+    <!-- Controls -->
+    <div class="ctrl">
+      <div><label>Test Set</label><br><select id="sel" onchange="render()"></select></div>
+      <div><label>Template</label><br><select id="tmpl" onchange="applyTemplate()">
+        <option value="750">750</option><option value="775">775</option><option value="800">800</option>
+        <option value="825">825</option><option value="850" selected>850</option><option value="875">875</option>
+        <option value="900">900</option><option value="925">925</option><option value="950">950</option>
+        <option value="990">990</option>
+      </select></div>
+      <div><label>Target Total</label><br><div class="adj"><button onclick="adj('tT',-5)">−</button><input type="number" id="tT" value="850" min="10" max="990" step="5" onchange="render()"><button onclick="adj('tT',5)">+</button></div></div>
+      <div><label>Target LC</label><br><div class="adj"><button onclick="adj('tL',-5)">−</button><input type="number" id="tL" value="470" min="5" max="495" step="5" onchange="render()"><button onclick="adj('tL',5)">+</button></div></div>
+      <div><label>Target RC</label><br><div class="adj"><button onclick="adj('tR',-5)">−</button><input type="number" id="tR" value="380" min="5" max="495" step="5" onchange="render()"><button onclick="adj('tR',5)">+</button></div></div>
+      <div><button onclick="document.getElementById('fp2').click()" style="font-size:11px;padding:6px 12px;border:1px solid #ddd;border-radius:6px;background:#fff;cursor:pointer;margin-top:14px">+ Add more</button></div>
+      <input type="file" id="fp2" multiple accept=".csv" class="hidden" onchange="addFiles(this.files)">
+    </div>
+    <div class="row" id="cards"></div>
+    <div class="sec">
+      <div class="sec-t">Part Breakdown</div>
+      <div style="overflow-x:auto">
+        <table><thead><tr><th>Part</th><th>Correct</th><th>Accuracy</th><th>Target</th><th>Gap</th><th>Status</th></tr></thead>
+        <tbody id="ptb"></tbody></table>
+      </div>
+    </div>
+    <div class="sec">
+      <div class="sec-t">Test Sets</div>
+      <div id="td"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ══ Score Templates ══
+const TEMPLATES = {
+  750:  {lc:410,rc:340,p1:100,p2:88,p3:85,p4:83,p5:80,p6:75,p7:72,p71:75,p72:70,p73:65},
+  775:  {lc:425,rc:350,p1:100,p2:88,p3:87,p4:85,p5:83,p6:78,p7:74,p71:78,p72:72,p73:67},
+  800:  {lc:440,rc:360,p1:100,p2:90,p3:88,p4:87,p5:85,p6:80,p7:76,p71:80,p72:75,p73:70},
+  825:  {lc:455,rc:370,p1:100,p2:92,p3:90,p4:88,p5:87,p6:83,p7:78,p71:82,p72:77,p73:73},
+  850:  {lc:470,rc:380,p1:100,p2:92,p3:90,p4:90,p5:90,p6:88,p7:85,p71:90,p72:80,p73:80},
+  875:  {lc:480,rc:395,p1:100,p2:94,p3:92,p4:92,p5:92,p6:90,p7:87,p71:92,p72:85,p73:83},
+  900:  {lc:490,rc:410,p1:100,p2:96,p3:94,p4:93,p5:93,p6:92,p7:90,p71:93,p72:88,p73:87},
+  925:  {lc:495,rc:430,p1:100,p2:98,p3:96,p4:95,p5:95,p6:94,p7:93,p71:95,p72:92,p73:90},
+  950:  {lc:495,rc:455,p1:100,p2:100,p3:98,p4:97,p5:97,p6:96,p7:95,p71:97,p72:95,p73:93},
+  990:  {lc:495,rc:495,p1:100,p2:100,p3:100,p4:100,p5:100,p6:100,p7:100,p71:100,p72:100,p73:100},
+};
+
+function applyTemplate() {
+  const t = TEMPLATES[document.getElementById('tmpl').value];
+  if (!t) return;
+  document.getElementById('tT').value = +document.getElementById('tmpl').value;
+  document.getElementById('tL').value = t.lc;
+  document.getElementById('tR').value = t.rc;
+  PARTS.forEach(p => {
+    const el = document.getElementById('t_'+p.k);
+    if (el && t[p.k] !== undefined) el.value = t[p.k];
+    partTargets[p.k] = t[p.k] !== undefined ? t[p.k] : p.t;
+  });
+  render();
+}
+
+function adj(id, delta) {
+  const el = document.getElementById(id);
+  el.value = Math.max(+el.min, Math.min(+el.max, +el.value + delta));
+  render();
+}
+function adjP(k, delta) {
+  const el = document.getElementById('t_'+k);
+  if (el) { el.value = Math.max(0, Math.min(100, +el.value + delta)); render(); }
+}
+
+// ══ ETS Conversion Table ══
+function buildTable() {
+  const rows = [
+    [100,495,495],[99,495,490],[98,495,485],[97,495,485],[96,495,475],
+    [95,495,470],[94,495,460],[93,495,455],[92,490,450],[91,485,440],
+    [90,480,435],[89,475,425],[88,465,420],[87,460,415],[86,455,405],
+    [85,445,395],[84,440,390],[83,435,385],[82,430,375],[81,425,370],
+    [80,420,360],[79,415,355],[78,405,345],[77,400,340],[76,395,335],
+    [75,385,330],[74,375,325],[73,370,320],[72,365,315],[71,360,310],
+    [70,355,300],[69,350,295],[68,345,295],[67,340,290],[66,335,285],
+    [65,330,280],[64,325,275],[63,320,270],[62,310,260],[61,300,255],
+    [60,295,250],[59,290,245],[58,285,240],[57,275,230],[56,265,220],
+    [55,260,215],[54,255,210],[53,245,205],[52,235,195],[51,230,185],
+    [50,225,175],[49,220,170],[48,215,160],[47,205,155],[46,200,145],
+    [45,190,140],[44,180,135],[43,175,130],[42,170,125],[41,160,120],
+    [40,150,115],[39,140,105],[38,135,95],[37,125,90],[36,115,85],
+    [35,105,80],[34,100,75],[33,95,70],[32,90,65],[31,85,60],
+    [30,80,55],[29,70,45],[28,60,40],[27,55,35],[26,50,30],
+    [25,45,25],[24,40,20],[23,35,15],[22,30,10],[21,25,5],
+    [20,20,5],[19,15,5],[18,10,5],
+  ];
+  const lc = new Array(101).fill(5), rc = new Array(101).fill(5);
+  rows.forEach(([raw,l,r]) => { lc[raw]=l; rc[raw]=r; });
+  return {lc,rc};
+}
+const CONV = buildTable();
+function convertLC(c) { return CONV.lc[Math.min(100,Math.max(0,Math.round(c)))]||5; }
+function convertRC(c) { return CONV.rc[Math.min(100,Math.max(0,Math.round(c)))]||5; }
+
+function proficiency(t) {
+  if(t>=905) return ['International Professional Proficiency','prof-ip'];
+  if(t>=785) return ['Working Proficiency Plus','prof-wp'];
+  if(t>=605) return ['Limited Working Proficiency','prof-lw'];
+  if(t>=405) return ['Elementary Proficiency Plus','prof-ep'];
+  if(t>=255) return ['Elementary Proficiency','prof-el'];
+  return ['Basic Proficiency','prof-ba'];
+}
+
+// ══ Parts ══
+const PARTS = [
+  {k:'p1',n:'Part 1',r:[1,6],s:'LC',t:100},
+  {k:'p2',n:'Part 2',r:[7,31],s:'LC',t:92},
+  {k:'p3',n:'Part 3',r:[32,70],s:'LC',t:90},
+  {k:'p4',n:'Part 4',r:[71,100],s:'LC',t:90},
+  {k:'p5',n:'Part 5',r:[1,30],s:'RC',t:90},
+  {k:'p6',n:'Part 6',r:[31,46],s:'RC',t:88},
+  {k:'p7',n:'Part 7',r:[47,100],s:'RC',t:85},
+  {k:'p71',n:'  7.1 Single',r:[47,75],s:'RC',t:90},
+  {k:'p72',n:'  7.2 Double',r:[76,85],s:'RC',t:80},
+  {k:'p73',n:'  7.3 Triple',r:[86,100],s:'RC',t:80},
+];
+let partTargets = {};
+PARTS.forEach(p => partTargets[p.k] = p.t);
+
+let DATA = {};
+
+// ══ CSV ══
+function parseCSV(text,name) {
+  const lines = text.replace(/\r/g,'').split('\n');
+  const title = (lines[0]||'').split(',').slice(1).join(',').trim();
+  const type = /listening/i.test(title)||/listening/i.test(name)?'LC':'RC';
+  const qs = [];
+  for(let i=4;i<lines.length;i++){const m=lines[i].match(/^Question\s+(\d+),([A-D]),([✓✗])/);if(m)qs.push({n:+m[1],ok:m[3]==='✓'});}
+  return {title,type,qs};
+}
+function setName(path){const p=(path||'').replace(/\\/g,'/').split('/');return p.length>=2?p[p.length-2]:'uploaded';}
+function addFiles(files){
+  const arr=[...files].filter(f=>f.name.endsWith('.csv'));
+  if(!arr.length)return;
+  Promise.all(arr.map(f=>new Promise(res=>{const r=new FileReader();r.onload=e=>{const sn=setName(f.webkitRelativePath||f.name);const t=parseCSV(e.target.result,f.name);if(t.qs.length){if(!DATA[sn])DATA[sn]=[];if(!DATA[sn].find(x=>x.title===t.title&&x.type===t.type))DATA[sn].push(t);}res();};r.readAsText(f);}))).then(()=>{buildSel();render();});
+}
+function buildSel(){const s=document.getElementById('sel');const v=s.value;s.innerHTML='<option value="all">All Sets</option>';Object.keys(DATA).sort().forEach(k=>s.innerHTML+=`<option value="${k}">${k}</option>`);if([...s.options].find(o=>o.value===v))s.value=v;}
+function getTests(){const v=document.getElementById('sel').value;return v==='all'?Object.values(DATA).flat():(DATA[v]||[]);}
+function calc(qs,lo,hi){const s=qs.filter(q=>q.n>=lo&&q.n<=hi);const c=s.filter(q=>q.ok).length;return{c,t:s.length,p:s.length?c/s.length*100:0};}
+
+function gapH(v,t){const d=v-t;return `<span class="${d>=0?'pos':'neg'}">${d>=0?'+':''}${d}</span>`;}
+function gapP(v,t){const d=v-t;return `<span class="${d>=0?'pos':'neg'}">${d>=0?'+':''}${d.toFixed(1)}%</span>`;}
+function bar(pct,tgt){const c=pct>=tgt?'bg':pct>=tgt-10?'by':'br';return `<span class="bar"><i class="${c}" style="width:${Math.min(100,pct)}%"></i></span>`;}
+function status(v,t){return v>=t?'<span class="st st-pass">PASS</span>':'<span class="st st-fail">NEEDS WORK</span>';}
+function statusScore(v,t){return v>=t?'<span class="st st-pass">✓</span>':'<span class="st st-fail">✗</span>';}
+
+function render(){
+  document.getElementById('dash').classList.remove('hidden');
+  const tests=getTests();
+  const lc=tests.filter(t=>t.type==='LC'),rc=tests.filter(t=>t.type==='RC');
+  const tT=+document.getElementById('tT').value,tL=+document.getElementById('tL').value,tR=+document.getElementById('tR').value;
+  const lcAvg=lc.length?lc.reduce((s,t)=>s+t.qs.filter(q=>q.ok).length,0)/lc.length:0;
+  const rcAvg=rc.length?rc.reduce((s,t)=>s+t.qs.filter(q=>q.ok).length,0)/rc.length:0;
+  const eL=convertLC(lcAvg),eR=convertRC(rcAvg),eT=eL+eR;
+  const [profName,profCls]=proficiency(eT);
+
+  document.getElementById('cards').innerHTML=`
+    <div class="card" style="flex:2">
+      <div class="lb">Est. Total (ETS) ${statusScore(eT,tT)}</div>
+      <div class="vl">${eT}</div>
+      <div class="gp">${gapH(eT,tT)} to ${tT}</div>
+      <div class="prof ${profCls}">${profName}</div>
+    </div>
+    <div class="card">
+      <div class="lb">Listening ${statusScore(eL,tL)}</div>
+      <div class="vl" style="font-size:22px">${eL}</div>
+      <div class="gp">${gapH(eL,tL)} to ${tL}</div>
+      <div style="font-size:11px;color:#999;margin-top:2px">${Math.round(lcAvg)}/100 correct</div>
+    </div>
+    <div class="card">
+      <div class="lb">Reading ${statusScore(eR,tR)}</div>
+      <div class="vl" style="font-size:22px">${eR}</div>
+      <div class="gp">${gapH(eR,tR)} to ${tR}</div>
+      <div style="font-size:11px;color:#999;margin-top:2px">${Math.round(rcAvg)}/100 correct</div>
+    </div>
+    <div class="card">
+      <div class="lb">Tests</div>
+      <div class="vl" style="font-size:22px">${tests.length}</div>
+      <div class="gp" style="color:#888">${lc.length} LC · ${rc.length} RC</div>
+    </div>`;
+
+  // Part table
+  const tb=document.getElementById('ptb');
+  const saved={};
+  PARTS.forEach(p=>{const el=document.getElementById('t_'+p.k);if(el)saved[p.k]=+el.value;});
+  tb.innerHTML='';
+  PARTS.forEach(p=>{
+    const rel=p.s==='LC'?lc:rc;
+    let tc=0,tq=0;
+    rel.forEach(t=>{const s=calc(t.qs,p.r[0],p.r[1]);tc+=s.c;tq+=s.t;});
+    const pct=tq?tc/tq*100:0;
+    const ac=rel.length?Math.round(tc/rel.length):0;
+    const qc=p.r[1]-p.r[0]+1;
+    const tv=saved[p.k]!==undefined?saved[p.k]:(partTargets[p.k]||p.t);
+    const isP7=p.k==='p7',isSub=p.k.startsWith('p7')&&p.k!=='p7';
+    tb.innerHTML+=`<tr class="${isP7?'p7head':''}">
+      <td class="${isSub?'indent':''}"><span class="tag ${p.s==='LC'?'t-lc':'t-rc'}">${p.s}</span>${p.n}</td>
+      <td class="m">${ac}/${qc}</td>
+      <td class="m">${pct.toFixed(1)}% ${bar(pct,tv)}</td>
+      <td><div class="adj"><button onclick="adjP('${p.k}',-5)">−</button><input type="number" id="t_${p.k}" value="${tv}" min="0" max="100" step="5" onchange="render()"><button onclick="adjP('${p.k}',5)">+</button></div></td>
+      <td class="m">${gapP(pct,tv)}</td>
+      <td>${tq?status(pct,tv):''}</td></tr>`;
+  });
+
+  // Test details
+  const td=document.getElementById('td');td.innerHTML='';
+  const sets=document.getElementById('sel').value==='all'?Object.entries(DATA):[[document.getElementById('sel').value,DATA[document.getElementById('sel').value]||[]]];
+  sets.forEach(([sn,sts])=>{
+    if(!sts||!sts.length)return;
+    sts.forEach(t=>{
+      const correct=t.qs.filter(q=>q.ok).length;
+      const conv=t.type==='LC'?convertLC(correct):convertRC(correct);
+      const pp=t.type==='LC'?[['Part 1',[1,6]],['Part 2',[7,31]],['Part 3',[32,70]],['Part 4',[71,100]]]:[['Part 5',[1,30]],['Part 6',[31,46]],['Part 7',[47,100]],['  7.1 Single',[47,75]],['  7.2 Double',[76,85]],['  7.3 Triple',[86,100]]];
+      let rows='';
+      pp.forEach(([nm,[lo,hi]])=>{const s=calc(t.qs,lo,hi);const cl=s.p>=85?'bg':s.p>=70?'by':'br';const ind=nm.startsWith('  ')?'class="indent"':'';rows+=`<tr><td ${ind}>${nm}</td><td class="m">${s.c}/${s.t}</td><td class="m">${s.p.toFixed(1)}% <span class="bar"><i class="${cl}" style="width:${s.p}%"></i></span></td></tr>`;});
+      td.innerHTML+=`<details><summary><span><span class="tag ${t.type==='LC'?'t-lc':'t-rc'}">${t.type}</span> ${sn} — ${t.title}</span><span class="m" style="color:#888">${correct}/100 → <b>${conv}</b></span></summary><table><thead><tr><th>Part</th><th>Score</th><th>Accuracy</th></tr></thead><tbody>${rows}</tbody></table></details>`;
+    });
+  });
+}
+
+// ══ Drag & Drop ══
+const dz=document.getElementById('drop');
+dz.addEventListener('dragover',e=>{e.preventDefault();dz.classList.add('ov');});
+dz.addEventListener('dragleave',()=>dz.classList.remove('ov'));
+dz.addEventListener('drop',e=>{
+  e.preventDefault();dz.classList.remove('ov');
+  if(e.dataTransfer.items){const all=[];let pend=0;const done=()=>{if(--pend<=0)addFiles(all);};for(const it of e.dataTransfer.items){const en=it.webkitGetAsEntry?it.webkitGetAsEntry():null;if(en){pend++;readE(en,all,done);}}if(!pend)addFiles(e.dataTransfer.files);}else addFiles(e.dataTransfer.files);
+});
+function readE(en,list,cb){
+  if(en.isFile){en.file(f=>{f.webkitRelativePath=en.fullPath;list.push(f);cb();});}
+  else if(en.isDirectory){const r=en.createReader();r.readEntries(es=>{if(!es.length){cb();return;}let s=es.length;es.forEach(e=>readE(e,list,()=>{if(--s<=0)cb();}));});}
+  else cb();
+}
+</script>
+</body>
+</html>
