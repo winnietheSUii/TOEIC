@@ -1,2 +1,5 @@
 # Ignore all text source files in Grammar
 /Grammar/**/*.txt
+
+# Ignore TOEIC result CSV files, keep only template/example files
+/Dashboard/Results/**/*.csv
